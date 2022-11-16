@@ -8,8 +8,9 @@ try:
     browser = webdriver.Chrome()
     browser.get(link)
     
-    input1 = browser.find_element(By.CLASS_NAME, "form-control.first")
+    input1 = browser.find_element(By.XPATH, "//input[@placeholder='Input your first name']")
     input1.send_keys("Andrei")
+    time.sleep(3)
     
     input2 = browser.find_element(By.CLASS_NAME, "form-control.second")
     input2.send_keys("Novikau")
