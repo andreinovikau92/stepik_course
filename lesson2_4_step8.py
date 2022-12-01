@@ -30,6 +30,6 @@ try:
     button.click()
         
 finally:
-    time.sleep(3)
+    time.sleep(6)
     browser.quit()
         
